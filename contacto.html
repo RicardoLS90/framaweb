@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Fuentes de Google -->
+  <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Prata&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- EmailJS SDK -->
+  <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+emailjs.init({
+  publicKey: "emya8w-yeAX_09787",
+});
+})();
+</script>
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <!-- fade css   -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header header-nosotros">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="height: 80px;">
+      <a class="navbar-brand" href="#">
+        <img src="/assets/logo/framalogo.png" alt="Logo" style="max-height: 130px;">
+      </a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html" style="color: aliceblue;">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="nosotros.html" style="color: aliceblue;">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <div class="btn-container"><a class="nav-link btn-contact" href="contacto.html"><b>Contáctanos</b></a></div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section class="tittle-section">
+    <div class="tittle-text">
+      <h1>Contacto</h1>
+    </div>
+  </section>
+
+   <!-- seccion contacto -->
+
+   <section class="contact-section contact-box animate__animated animate__fadeIn">
+    <div class="contact-content">
+        <h1>Contáctanos</h1>
+        <p>¿Listo para descubrir cómo FRAMA puede impulsar tu próxima gran idea?</p>
+        <form id="contact-form">
+            <div class="form-group">
+                <input type="text" id="email" placeholder="Nombre*" required>
+                <input type="email" id="message" placeholder="Email*" required>
+            </div>
+            <textarea placeholder="Cuéntanos sobre que ropa buscas" style="resize: none;"></textarea>
+
+            <button class="button" type="submit">Enviar</button>
+        </form>
+    </div>
+</section>
+
+
+  
+  <!-- Seccion Beneficios -->
+
+  <section class="section-beneficios animate__animated animate__fadeIn" id="unete">
+    <div class="title-beneficios" data-aos="fade-up">
+      <h1>Nuestros Beneficios</h1>
+      <p>Desbloquea el valor de FRAMA</p>
+    </div>
+    <div class="beneficios-container">
+      <div class="square first">
+        <img src="/assets/beneficios/star.svg" alt="">
+        <h3>Innovación Sin Límites</h3>
+        <p>La innovación es nuestro motor.
+          Nos esforzamos por superar los límites establecidos y desafiar lo
+          convencional en cada aspecto de nuestro trabajo.
+        </p>
+      </div>
+      <div class="square second">
+        <img src="/assets/beneficios/shield-check.svg" alt="">
+        <h3>Calidad Insuperable</h3>
+        <p>La calidad es nuestra máxima prioridad.
+          Cada producto que lleva la marca FRAMA está diseñado y
+          fabricado con los más altos estándares de calidad.
+        </p>
+      </div>
+      <div class="square terth">
+        <img src="/assets/beneficios/heart-handshake.svg" alt="">
+        <h3>Servicio al Cliente</h3>
+        <p>Nos enorgullece ofrecer un servicio al cliente excepcional.
+          Nos comprometemos a brindarte una experiencia de compra sin igual.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="header footer animate__animated animate__fadeIn">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="height: 80px;">
+      <a class="navbar-brand" href="#">
+        <img src="/assets/logo/framalogo.png" alt="Logo" style="max-height: 130px;">
+      </a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html" style="color: aliceblue;">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" style="color: aliceblue;">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <div class="btn-container"><a class="nav-link btn-contact" href="contacto.html"><b>Contáctanos</b></a></div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </footer>
+
+  <!-- jQuery, Popper.js, y Bootstrap JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+
+</html>

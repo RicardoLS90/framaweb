@@ -1,0 +1,517 @@
+/* Fuentes y colores */
+:root {
+  --primary-color: #2D4CD2;
+  --secondary-color: #8A008E;
+  --btn-bg-color: #1B1B1B;
+  --btn-text-color: #ffffff;
+  --text-color: #ffffff;
+  --font-primary: 'Prata', sans-serif;
+}
+
+
+
+/* Estilos generales */
+
+
+body {
+  margin: 0;
+  font-family: 'Prata', serif;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+  font-family: 'Prata', serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* botones */
+
+.vermas-button {
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-color);
+  text-decoration: none;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #ffffff;
+  padding: 17px;
+}
+
+.vermas-button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+
+
+/* Estilos de la cabecera */
+.header {
+  background: rgba(0,0,0,1);
+  width: 100%;
+  height: 120px;
+  padding: 20px;
+}
+
+.navbar {
+  height: 100%;
+  display: flex;
+  gap: 500px;
+}
+
+.navbar-brand {
+  margin-left: 100px;
+}
+
+
+
+.navbar-nav {
+  display: flex;
+  gap: 30px;
+}
+
+
+.navbar-dark .navbar-brand img {
+  padding: 10px;
+}
+
+.btn-container {
+  background-color: var(--btn-text-color);
+
+  padding: 0px 5px;
+}
+
+.btn-contact {
+  
+  color: black !important;
+  
+
+}
+.btn-container:hover {
+  background-color: black;
+}
+
+.btn-contact:hover {
+  color: aliceblue !important;
+}
+
+.nav-link {
+  font-size: 19px;
+  font-weight: 400;
+}
+
+.nav-link:hover {
+  scale: 1.1;
+}
+
+
+
+/* Estilos del carrusel */
+.carousel-item {
+  height: 85vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel-caption {
+  transform: translateY(-50%);
+  top: 60%;
+  text-align: left;
+  height: 250px;
+}
+
+
+
+.carousel-caption h5 {
+  font-size: 45px;
+  font-weight: 400;
+  color: var(--text-color);
+  text-align: left;
+
+}
+
+.carousel-caption p {
+  font-size: 14px;
+  color: var(--text-color);
+  max-width: 600px;
+  text-align: left;
+  font-family: "Inter";
+  font-weight: 400;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.button-container {
+  width: 50%;
+  text-align: left;
+}
+
+.carousel-button {
+  text-align: left;
+  padding: 17px 40px;
+}
+
+
+.btn-primary {
+  background-color: var(--btn-bg-color);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: var(--btn-text-color);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-color);
+  color: var(--btn-text-color);
+}
+
+.carousel-item::before {
+  content: "";
+  width: 70%;
+  background-image: linear-gradient(to left, rgba(255,0,0,0), rgb(10, 10, 10));
+  position: absolute;
+  inset: 0;
+}
+
+
+/* Estilos seccion Nosotros */
+
+.section-nosotros {
+  padding: 60px 0;
+  background: #151413;
+  color: #fff;
+}
+  /* 
+  .img-fluid {
+    width: 577px;
+    height: 665px;
+  } */
+
+.nosotros-text {
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-nosotros h1 {
+  font-size: 36px;
+  font-weight: 400;
+  margin-bottom: 60px;
+  width: 400px;
+}
+
+.section-nosotros p {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 40px;
+  width: 436px;
+}
+
+
+.nosotros-button {
+  text-align: center;
+  padding: 17px 40px;
+}
+
+
+/* estilos seccion unete */
+
+.section-unete {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #151413;
+  height: 100%;
+  align-items: center;
+}
+
+.index-unete {
+  padding: 60px 0 0 0;
+}
+
+.unete-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5%;
+  width: 100%;
+
+}
+
+.left-side {
+  background-color: #d3d3d3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+
+}
+
+.right-side {
+  flex: 1;
+}
+
+.left-side h1 {
+  font-size: 40px;
+  margin-bottom: 30px;
+  font-weight: 400;
+
+}
+
+.left-side p {
+  font-size: 14px;
+  margin-bottom: 60px;
+  font-weight: 600;
+  width: 450px;
+}
+
+.left-side .btn-unite {
+  background-color: transparent;
+  border: 1px solid #000;
+  color: #000;
+  padding: 17px 50px;
+  border-radius: 5px;
+  border-width: 2px;
+  text-decoration: none;
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.left-side .btn-unite:hover {
+  background-color: #151413;
+  color: #fff;
+}
+
+.right-side img {
+  width: 100%;
+  height: auto;
+}
+
+
+
+/* estilos seccion beneficios */
+
+
+
+.section-beneficios {
+  background-color: #151413;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: aliceblue;
+  text-align: center;
+}
+
+.title-beneficios {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.title-beneficios h1 {
+  font-size: 55px;
+  font-weight: 400;
+  font-family: "Prata";
+}
+
+.title-beneficios p {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Inter";
+}
+
+.beneficios-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 100px;
+  gap: 20px;
+}
+
+
+.square {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  border: 2px #ffffff solid;
+  border-radius: 10px;
+  padding: 60px 35px;
+}
+
+.square img {
+  height: 48,34px;
+}
+
+.square h3 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.square p {
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 400;
+}
+
+
+/* estilos seccion contactanos */
+
+.contact-section {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  text-align: center;
+  height: 1090px;
+  background-image: url('/assets/contact/contactback.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0 0 0 100px;
+}
+
+.contact-content {
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+  
+}
+
+.contact-content h1 {
+  font-weight: 400;
+  font-size: 55px;
+  margin-bottom: 20px;
+}
+
+.contact-content p {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+form {
+  width: 100%;
+}
+
+.form-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 1em;
+}
+
+input::placeholder {
+  color: #000;
+}
+
+textarea::placeholder {
+  color: #000;
+}
+
+textarea {
+  height: 100px;
+  resize: none;
+
+}
+
+button {
+  width: 100%;
+  padding: 15px;
+  background-color: transparent;
+  border: 2px solid #000;
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: 1em;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: "Inter";
+  font-weight: 700;
+  line-height: 16,94px;
+  
+}
+
+
+
+.button {
+  border-radius: 5px;
+  margin-top: 30px;
+}
+
+.button:hover {
+  color: #C7C7C7;
+  background-color: #151413;
+  font-size: 18px;
+}
+
+.footer {
+  height: 200px;
+  overflow: hidden;
+  padding: 60px 0 0 0;
+}
+
+
+/* seccion nosotroshtml */
+
+.tittle-text {
+  height: 210px;
+  background-color: #C7C7C7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.tittle-text h1 {
+  font-family: "Prata";
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 83,2px;
+  color: #000;
+}
+
+.container-mision {
+  padding: 60px 0 0 0 ;
+}
+
+.header-nosotros {
+  overflow: hidden;
+}
+
+.mision {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+/* contacthtml */
+
+.contact-box {
+  /* display: flex;
+  justify-content: left;
+  align-items: center;
+  text-align: center;
+  /* background-image: url('/assets/contact/contactback.png'); */
+  height: 1090px;
+  background-size: cover;
+  /* background-position: center;
+  background-repeat: no-repeat;
+  padding: 0 0 0 100px; */
+}
