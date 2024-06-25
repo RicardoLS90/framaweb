@@ -73,9 +73,15 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 
 
-.navbar-dark .navbar-brand img {
+/* .navbar-dark .navbar-brand img {
   padding: 10px;
+} */
+
+.navbar-brand img {
+  width: 250px;
+  height: 300px;
 }
+
 
 .btn-container {
   background-color: var(--btn-text-color);
