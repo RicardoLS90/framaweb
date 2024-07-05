@@ -472,6 +472,40 @@ button {
   padding: 60px 0 0 0;
 }
 
+.redes_icon {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.bi {
+  font-size: 40px;
+  color: var(--btn-bg-color);
+}
+
+.bi-instagram:hover {
+  color: #DD2A7B;
+}
+
+.bi-facebook:hover {
+  color: #515BD4;
+}
+
+.bi-whatsapp:hover {
+  color: #25d366;
+}
+
+.bi-tiktok:hover {
+  color: #DD2A7B;
+}
+
+.bi:hover {
+  transition: 0.5s;
+}
+
 
 /* seccion nosotroshtml */
 
