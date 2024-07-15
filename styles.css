@@ -47,6 +47,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 
 
 
+
 /* Estilos de la cabecera */
 .header {
   background: rgba(0,0,0,1);
@@ -58,19 +59,28 @@ h1, h2, h3, h4, h5, h6, p, a {
 .navbar {
   height: 100%;
   display: flex;
-  gap: 500px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
 }
+
+
 
 .navbar-brand {
   margin-left: 100px;
 }
 
-
+.navbar-collapse {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 100px;
+}
 
 .navbar-nav {
   display: flex;
   gap: 30px;
 }
+
 
 
 /* .navbar-dark .navbar-brand img {
@@ -79,13 +89,12 @@ h1, h2, h3, h4, h5, h6, p, a {
 
 .navbar-brand img {
   width: 250px;
-  height: 300px;
+  height: auto;
 }
 
 
 .btn-container {
   background-color: var(--btn-text-color);
-
   padding: 0px 5px;
 }
 
@@ -109,7 +118,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 
 .nav-link:hover {
-  scale: 1.1;
+  transform: scale(1.1);
 }
 
 
@@ -554,3 +563,125 @@ button {
   background-repeat: no-repeat;
   padding: 0 0 0 100px; */
 }
+
+
+/* responsive */
+
+@media (min-width: 768px) {
+  
+  .navbar-nav {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .navbar {
+    padding: 0 50px;
+  }
+
+
+  .navbar-nav {
+    gap: 30px;
+  }
+
+  .navbar-brand img {
+    width: 250px;
+    height: 300px;
+  }
+
+  .button-container {
+    width: 50%;
+  }
+
+  .beneficios-container {
+    grid-template-columns: 1fr 1fr;
+    padding: 50px;
+  }
+
+  .carousel-caption h5 {
+    font-size: 45px;
+  }
+
+  .section-nosotros h1 {
+    width: 400px;
+  }
+
+  .section-nosotros p {
+    width: 436px;
+  }
+
+
+  /* carousel responsive */
+
+
+
+  .carousel-item {
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .carousel-caption {
+    transform: translateY(-50%);
+    top: 60%;
+    text-align: left;
+    height: 250px;
+  }
+  
+  
+  
+  .carousel-caption h5 {
+    font-size: 45px;
+    font-weight: 400;
+    color: var(--text-color);
+    text-align: left;
+  
+  }
+  
+  .carousel-caption p {
+    font-size: 14px;
+    color: var(--text-color);
+    max-width: 600px;
+    text-align: left;
+    font-family: "Inter";
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+  
+  .button-container {
+    width: 50%;
+    text-align: left;
+  }
+  
+  .carousel-button {
+    text-align: left;
+    padding: 17px 40px;
+  }
+  
+  
+  .btn-primary {
+    background-color: var(--btn-bg-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: var(--btn-text-color);
+  }
+  
+  .btn-primary:hover {
+    background-color: var(--primary-color);
+    color: var(--btn-text-color);
+  }
+  
+  .carousel-item::before {
+    content: "";
+    width: 70%;
+    background-image: linear-gradient(to left, rgba(255,0,0,0), rgb(10, 10, 10));
+    position: absolute;
+    inset: 0;
+  }
+  
+
+}
+
+
+
